@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-    
-    <!-- modify -->
-    <title>Title</title>
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#33ffcc"/>
-    <!-- /manifest -->
-</head>
-<body>
-    
-    <h1>it works.</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- load service worker -->
-    <script src="app.js"></script>
-    <!-- /load service worker -->
-</body>
+    <!-- Ícone do app -->
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+
+    <!-- Manifesto do PWA -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#33ffcc" />
+
+    <title>Meu PWA</title>
+  </head>
+  <body>
+    <h1>It works.</h1>
+
+    <!-- Registro do Service Worker -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/sw.js")
+            .then((reg) => {
+              console.log("Service Worker registrado com sucesso:", reg);
+            })
+            .catch((err) => {
+              console.error("Erro ao registrar o Service Worker:", err);
+            });
+        });
+      }
+    </script>
+  </body>
 </html>
