@@ -2,7 +2,7 @@
   "theme_color": "#8936FF",
   "background_color": "#2EC6FE",
   "display": "standalone",
-  "start_url": "/",
+  "start_url": ".",
   "scope": "/",
   "version": "1.0.0",
   "manifest_version": 1,
