@@ -1,6 +1,12 @@
 {
   "theme_color": "#8936FF",
   "background_color": "#2EC6FE",
+  "display": "Fullscreen",
+  "start_url": "/pwa-service/",
+  "scope": "/pwa-service/",
+  "version": "1.0.0",
+  "manifest_version": 2,
+
   "icons": [
     {
       "purpose": "maskable",
@@ -16,7 +22,6 @@
     }
   ],
   "orientation": "any",
-  "display": "standalone",
   "dir": "auto",
   "lang": "pt-BR",
   "name": "gestao-alunos",
