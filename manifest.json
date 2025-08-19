@@ -6,6 +6,12 @@
   "scope": "/pwa-service/",
   "version": "1.0.0",
   "manifest_version": 2,
+  "orientation": "any",
+  "dir": "auto",
+  "lang": "pt-BR",
+  "name": "gestao-alunos",
+  "short_name": "gestaoalunos",
+  "description": "Gestão Alunos",
 
   "icons": [
     {
@@ -20,11 +26,5 @@
       "src": "icon512_rounded.png",
       "type": "image/png"
     }
-  ],
-  "orientation": "any",
-  "dir": "auto",
-  "lang": "pt-BR",
-  "name": "gestao-alunos",
-  "short_name": "gestaoalunos",
-  "description": "Gestão Alunos"
+  ]
 }
